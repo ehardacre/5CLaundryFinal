@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4F55C7890EB1C860301C02 /* Pods_5CLaundry_V2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837AF555B936D352F57F5AB1 /* Pods_5CLaundry_V2Tests.framework */; };
+		4EA57720DF5A18768ACC859C /* Pods_5CLaundry_V2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD80281BA344D6B8395113F /* Pods_5CLaundry_V2UITests.framework */; };
+		991E92884654C63277539AE0 /* Pods_5CLaundry_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA293EEFD3878B42CC54543 /* Pods_5CLaundry_V2.framework */; };
+		EF3F02B220B32F8F0030604C /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02B120B32F8F0030604C /* Payment.swift */; };
+		EF3F02B620B387850030604C /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02B520B387850030604C /* InnerShadow.swift */; };
+		EF3F02BB20B4A1F90030604C /* shirtAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02BA20B4A1F90030604C /* shirtAnnotation.swift */; };
+		EF3F02BE20B4A20E0030604C /* Preferences.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02BC20B4A20E0030604C /* Preferences.xcdatamodeld */; };
+		EF3F02C020B4A2230030604C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3F02BF20B4A2220030604C /* Assets.xcassets */; };
+		EF3F02C420B4A2980030604C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF3F02C320B4A2980030604C /* GoogleService-Info.plist */; };
+		EF3F02C720B5C74D0030604C /* Home2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02C620B5C74D0030604C /* Home2.swift */; };
+		EF3F02C920B601E20030604C /* TimeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02C820B601E20030604C /* TimeHeader.swift */; };
+		EF3F02CB20B7B7810030604C /* Home3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02CA20B7B7810030604C /* Home3.swift */; };
+		EF3F02CD20B8C5C90030604C /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F02CC20B8C5C90030604C /* Stop.swift */; };
+		EF41862620B2111800F8BCEA /* DryCleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41862520B2111800F8BCEA /* DryCleaning.swift */; };
+		EF41862820B21A6F00F8BCEA /* ReviewPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41862720B21A6F00F8BCEA /* ReviewPurchase.swift */; };
+		EF872B4A20AF263800550B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF872B4920AF263800550B37 /* AppDelegate.swift */; };
+		EF872B4C20AF263800550B37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF872B4B20AF263800550B37 /* ViewController.swift */; };
+		EF872B4F20AF263800550B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF872B4D20AF263800550B37 /* Main.storyboard */; };
+		EF872B5420AF263800550B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF872B5220AF263800550B37 /* LaunchScreen.storyboard */; };
+		EF872B5F20AF263800550B37 /* _CLaundry_V2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF872B5E20AF263800550B37 /* _CLaundry_V2Tests.swift */; };
+		EF872B6A20AF263800550B37 /* _CLaundry_V2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF872B6920AF263800550B37 /* _CLaundry_V2UITests.swift */; };
+		EFCE6AEC20AF271900B8E682 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6AEB20AF271900B8E682 /* Intro.swift */; };
+		EFCE6AEE20AF840A00B8E682 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6AED20AF840A00B8E682 /* TemplateVC.swift */; };
+		EFCE6AF320AF908800B8E682 /* LocationChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6AF220AF908800B8E682 /* LocationChoice.swift */; };
+		EFCE6B0420B0B2FE00B8E682 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6B0320B0B2FE00B8E682 /* MyAccount.swift */; };
+		EFCE6B0620B0BBE600B8E682 /* SubTemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6B0520B0BBE600B8E682 /* SubTemplateVC.swift */; };
+		EFCE6B0A20B0C0F800B8E682 /* LaundryPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6B0920B0C0F800B8E682 /* LaundryPlans.swift */; };
+		EFCE6B0E20B0C17600B8E682 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6B0D20B0C17600B8E682 /* Contact.swift */; };
+		EFCE6B1220B0C1F800B8E682 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE6B1120B0C1F800B8E682 /* FAQ.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF872B5B20AF263800550B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF872B3E20AF263800550B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF872B4520AF263800550B37;
+			remoteInfo = 5CLaundry_V2;
+		};
+		EF872B6620AF263800550B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF872B3E20AF263800550B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF872B4520AF263800550B37;
+			remoteInfo = 5CLaundry_V2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B230AD754F5D49317374D3E /* Pods-5CLaundry_V2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2Tests/Pods-5CLaundry_V2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		61FF1FDCA3000F243B9C6C40 /* Pods-5CLaundry_V2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2/Pods-5CLaundry_V2.debug.xcconfig"; sourceTree = "<group>"; };
+		6440918B04D9500206264136 /* Pods-5CLaundry_V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2UITests/Pods-5CLaundry_V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DA293EEFD3878B42CC54543 /* Pods_5CLaundry_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5CLaundry_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD80281BA344D6B8395113F /* Pods_5CLaundry_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5CLaundry_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837AF555B936D352F57F5AB1 /* Pods_5CLaundry_V2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5CLaundry_V2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA075418BEF7096EA4C9F766 /* Pods-5CLaundry_V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2/Pods-5CLaundry_V2.release.xcconfig"; sourceTree = "<group>"; };
+		C2529ECB544C70BBF7671252 /* Pods-5CLaundry_V2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2UITests/Pods-5CLaundry_V2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EEA25E5C506C3355CF93A7A4 /* Pods-5CLaundry_V2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5CLaundry_V2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5CLaundry_V2Tests/Pods-5CLaundry_V2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3F02B120B32F8F0030604C /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		EF3F02B520B387850030604C /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
+		EF3F02BA20B4A1F90030604C /* shirtAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shirtAnnotation.swift; path = 5CLaundry_V2/shirtAnnotation.swift; sourceTree = SOURCE_ROOT; };
+		EF3F02BD20B4A20E0030604C /* Preferences.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Preferences.xcdatamodel; sourceTree = "<group>"; };
+		EF3F02BF20B4A2220030604C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF3F02C320B4A2980030604C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF3F02C520B4A2C90030604C /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		EF3F02C620B5C74D0030604C /* Home2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2.swift; sourceTree = "<group>"; };
+		EF3F02C820B601E20030604C /* TimeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHeader.swift; sourceTree = "<group>"; };
+		EF3F02CA20B7B7810030604C /* Home3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home3.swift; sourceTree = "<group>"; };
+		EF3F02CC20B8C5C90030604C /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		EF41862520B2111800F8BCEA /* DryCleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryCleaning.swift; sourceTree = "<group>"; };
+		EF41862720B21A6F00F8BCEA /* ReviewPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPurchase.swift; sourceTree = "<group>"; };
+		EF872B4620AF263800550B37 /* 5CLaundry_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5CLaundry_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF872B4920AF263800550B37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF872B4B20AF263800550B37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF872B4E20AF263800550B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF872B5320AF263800550B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF872B5520AF263800550B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF872B5A20AF263800550B37 /* 5CLaundry_V2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5CLaundry_V2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF872B5E20AF263800550B37 /* _CLaundry_V2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CLaundry_V2Tests.swift; sourceTree = "<group>"; };
+		EF872B6020AF263800550B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF872B6520AF263800550B37 /* 5CLaundry_V2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5CLaundry_V2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF872B6920AF263800550B37 /* _CLaundry_V2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CLaundry_V2UITests.swift; sourceTree = "<group>"; };
+		EF872B6B20AF263800550B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC36C5120F133AA006D0052 /* 5CLaundry_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 5CLaundry_V2.entitlements; sourceTree = "<group>"; };
+		EFCE6AEB20AF271900B8E682 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		EFCE6AED20AF840A00B8E682 /* TemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
+		EFCE6AF220AF908800B8E682 /* LocationChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChoice.swift; sourceTree = "<group>"; };
+		EFCE6B0320B0B2FE00B8E682 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		EFCE6B0520B0BBE600B8E682 /* SubTemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTemplateVC.swift; sourceTree = "<group>"; };
+		EFCE6B0920B0C0F800B8E682 /* LaundryPlans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryPlans.swift; sourceTree = "<group>"; };
+		EFCE6B0D20B0C17600B8E682 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		EFCE6B1120B0C1F800B8E682 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF872B4320AF263800550B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991E92884654C63277539AE0 /* Pods_5CLaundry_V2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B5720AF263800550B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4F55C7890EB1C860301C02 /* Pods_5CLaundry_V2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B6220AF263800550B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA57720DF5A18768ACC859C /* Pods_5CLaundry_V2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5817219AAEDF44DE5FF6238 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61FF1FDCA3000F243B9C6C40 /* Pods-5CLaundry_V2.debug.xcconfig */,
+				AA075418BEF7096EA4C9F766 /* Pods-5CLaundry_V2.release.xcconfig */,
+				EEA25E5C506C3355CF93A7A4 /* Pods-5CLaundry_V2Tests.debug.xcconfig */,
+				3B230AD754F5D49317374D3E /* Pods-5CLaundry_V2Tests.release.xcconfig */,
+				6440918B04D9500206264136 /* Pods-5CLaundry_V2UITests.debug.xcconfig */,
+				C2529ECB544C70BBF7671252 /* Pods-5CLaundry_V2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF41862420B210C900F8BCEA /* Purchase Plan */ = {
+			isa = PBXGroup;
+			children = (
+				EFCE6B0920B0C0F800B8E682 /* LaundryPlans.swift */,
+				EF41862520B2111800F8BCEA /* DryCleaning.swift */,
+				EF41862720B21A6F00F8BCEA /* ReviewPurchase.swift */,
+				EF3F02B120B32F8F0030604C /* Payment.swift */,
+			);
+			path = "Purchase Plan";
+			sourceTree = "<group>";
+		};
+		EF872B3D20AF263800550B37 = {
+			isa = PBXGroup;
+			children = (
+				EF3F02C520B4A2C90030604C /* bridging-header.h */,
+				EF872B4820AF263800550B37 /* 5CLaundry_V2 */,
+				EF872B5D20AF263800550B37 /* 5CLaundry_V2Tests */,
+				EF872B6820AF263800550B37 /* 5CLaundry_V2UITests */,
+				EF872B4720AF263800550B37 /* Products */,
+				E5817219AAEDF44DE5FF6238 /* Pods */,
+				F2BC8187E9FB99C6C71A13A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF872B4720AF263800550B37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF872B4620AF263800550B37 /* 5CLaundry_V2.app */,
+				EF872B5A20AF263800550B37 /* 5CLaundry_V2Tests.xctest */,
+				EF872B6520AF263800550B37 /* 5CLaundry_V2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF872B4820AF263800550B37 /* 5CLaundry_V2 */ = {
+			isa = PBXGroup;
+			children = (
+				EFC36C5120F133AA006D0052 /* 5CLaundry_V2.entitlements */,
+				EF872B4920AF263800550B37 /* AppDelegate.swift */,
+				EF3F02BC20B4A20E0030604C /* Preferences.xcdatamodeld */,
+				EFCE6B0320B0B2FE00B8E682 /* MyAccount.swift */,
+				EF41862420B210C900F8BCEA /* Purchase Plan */,
+				EFCE6B0D20B0C17600B8E682 /* Contact.swift */,
+				EFCE6B1120B0C1F800B8E682 /* FAQ.swift */,
+				EF3F02B520B387850030604C /* InnerShadow.swift */,
+				EFCE6B0520B0BBE600B8E682 /* SubTemplateVC.swift */,
+				EFCE6AEF20AF8FDB00B8E682 /* Home */,
+				EF872B4D20AF263800550B37 /* Main.storyboard */,
+				EF872B5220AF263800550B37 /* LaunchScreen.storyboard */,
+				EF872B5520AF263800550B37 /* Info.plist */,
+				EF3F02BF20B4A2220030604C /* Assets.xcassets */,
+				EF3F02C320B4A2980030604C /* GoogleService-Info.plist */,
+			);
+			path = 5CLaundry_V2;
+			sourceTree = "<group>";
+		};
+		EF872B5D20AF263800550B37 /* 5CLaundry_V2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF872B5E20AF263800550B37 /* _CLaundry_V2Tests.swift */,
+				EF872B6020AF263800550B37 /* Info.plist */,
+			);
+			path = 5CLaundry_V2Tests;
+			sourceTree = "<group>";
+		};
+		EF872B6820AF263800550B37 /* 5CLaundry_V2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF872B6920AF263800550B37 /* _CLaundry_V2UITests.swift */,
+				EF872B6B20AF263800550B37 /* Info.plist */,
+			);
+			path = 5CLaundry_V2UITests;
+			sourceTree = "<group>";
+		};
+		EFCE6AEF20AF8FDB00B8E682 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFCE6AED20AF840A00B8E682 /* TemplateVC.swift */,
+				EF872B4B20AF263800550B37 /* ViewController.swift */,
+				EF3F02C620B5C74D0030604C /* Home2.swift */,
+				EF3F02CA20B7B7810030604C /* Home3.swift */,
+				EF3F02CC20B8C5C90030604C /* Stop.swift */,
+				EFCE6AEB20AF271900B8E682 /* Intro.swift */,
+				EF3F02BA20B4A1F90030604C /* shirtAnnotation.swift */,
+				EF3F02C820B601E20030604C /* TimeHeader.swift */,
+				EFCE6AF220AF908800B8E682 /* LocationChoice.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2BC8187E9FB99C6C71A13A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DA293EEFD3878B42CC54543 /* Pods_5CLaundry_V2.framework */,
+				837AF555B936D352F57F5AB1 /* Pods_5CLaundry_V2Tests.framework */,
+				6FD80281BA344D6B8395113F /* Pods_5CLaundry_V2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF872B4520AF263800550B37 /* 5CLaundry_V2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF872B6E20AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2" */;
+			buildPhases = (
+				A83FA6EFE1B46CF95BAB31A3 /* [CP] Check Pods Manifest.lock */,
+				EF872B4220AF263800550B37 /* Sources */,
+				EF872B4320AF263800550B37 /* Frameworks */,
+				EF872B4420AF263800550B37 /* Resources */,
+				8E5DEC5D6A3B250F9BAFAB30 /* [CP] Embed Pods Frameworks */,
+				0442D1A6624EE6FC1770854D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 5CLaundry_V2;
+			productName = 5CLaundry_V2;
+			productReference = EF872B4620AF263800550B37 /* 5CLaundry_V2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF872B5920AF263800550B37 /* 5CLaundry_V2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF872B7120AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2Tests" */;
+			buildPhases = (
+				B853C0B59D271FEB63564272 /* [CP] Check Pods Manifest.lock */,
+				EF872B5620AF263800550B37 /* Sources */,
+				EF872B5720AF263800550B37 /* Frameworks */,
+				EF872B5820AF263800550B37 /* Resources */,
+				A7B9D54BE3F2264B39E40E52 /* [CP] Embed Pods Frameworks */,
+				52C8F9667A20918D91B26B12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF872B5C20AF263800550B37 /* PBXTargetDependency */,
+			);
+			name = 5CLaundry_V2Tests;
+			productName = 5CLaundry_V2Tests;
+			productReference = EF872B5A20AF263800550B37 /* 5CLaundry_V2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF872B6420AF263800550B37 /* 5CLaundry_V2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF872B7420AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2UITests" */;
+			buildPhases = (
+				BF12670A817DD1DF2A970ADB /* [CP] Check Pods Manifest.lock */,
+				EF872B6120AF263800550B37 /* Sources */,
+				EF872B6220AF263800550B37 /* Frameworks */,
+				EF872B6320AF263800550B37 /* Resources */,
+				4232C06E2E2D02684FCCEA51 /* [CP] Embed Pods Frameworks */,
+				F8AF43211E9AC29E9B271FFD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF872B6720AF263800550B37 /* PBXTargetDependency */,
+			);
+			name = 5CLaundry_V2UITests;
+			productName = 5CLaundry_V2UITests;
+			productReference = EF872B6520AF263800550B37 /* 5CLaundry_V2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF872B3E20AF263800550B37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ethan Hardacre";
+				TargetAttributes = {
+					EF872B4520AF263800550B37 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					EF872B5920AF263800550B37 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF872B4520AF263800550B37;
+					};
+					EF872B6420AF263800550B37 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF872B4520AF263800550B37;
+					};
+				};
+			};
+			buildConfigurationList = EF872B4120AF263800550B37 /* Build configuration list for PBXProject "5CLaundry_V2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF872B3D20AF263800550B37;
+			productRefGroup = EF872B4720AF263800550B37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF872B4520AF263800550B37 /* 5CLaundry_V2 */,
+				EF872B5920AF263800550B37 /* 5CLaundry_V2Tests */,
+				EF872B6420AF263800550B37 /* 5CLaundry_V2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF872B4420AF263800550B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF872B5420AF263800550B37 /* LaunchScreen.storyboard in Resources */,
+				EF3F02C420B4A2980030604C /* GoogleService-Info.plist in Resources */,
+				EF872B4F20AF263800550B37 /* Main.storyboard in Resources */,
+				EF3F02C020B4A2230030604C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B5820AF263800550B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B6320AF263800550B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0442D1A6624EE6FC1770854D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2/Pods-5CLaundry_V2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4232C06E2E2D02684FCCEA51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2UITests/Pods-5CLaundry_V2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C8F9667A20918D91B26B12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2Tests/Pods-5CLaundry_V2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5DEC5D6A3B250F9BAFAB30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2/Pods-5CLaundry_V2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B9D54BE3F2264B39E40E52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2Tests/Pods-5CLaundry_V2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83FA6EFE1B46CF95BAB31A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B853C0B59D271FEB63564272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF12670A817DD1DF2A970ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8AF43211E9AC29E9B271FFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5CLaundry_V2UITests/Pods-5CLaundry_V2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF872B4220AF263800550B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF41862620B2111800F8BCEA /* DryCleaning.swift in Sources */,
+				EF3F02BB20B4A1F90030604C /* shirtAnnotation.swift in Sources */,
+				EF3F02C720B5C74D0030604C /* Home2.swift in Sources */,
+				EF3F02B220B32F8F0030604C /* Payment.swift in Sources */,
+				EF3F02BE20B4A20E0030604C /* Preferences.xcdatamodeld in Sources */,
+				EFCE6B0E20B0C17600B8E682 /* Contact.swift in Sources */,
+				EFCE6AEE20AF840A00B8E682 /* TemplateVC.swift in Sources */,
+				EF3F02CD20B8C5C90030604C /* Stop.swift in Sources */,
+				EF872B4C20AF263800550B37 /* ViewController.swift in Sources */,
+				EFCE6B1220B0C1F800B8E682 /* FAQ.swift in Sources */,
+				EFCE6AF320AF908800B8E682 /* LocationChoice.swift in Sources */,
+				EF3F02C920B601E20030604C /* TimeHeader.swift in Sources */,
+				EF872B4A20AF263800550B37 /* AppDelegate.swift in Sources */,
+				EFCE6B0420B0B2FE00B8E682 /* MyAccount.swift in Sources */,
+				EFCE6B0A20B0C0F800B8E682 /* LaundryPlans.swift in Sources */,
+				EF3F02B620B387850030604C /* InnerShadow.swift in Sources */,
+				EF41862820B21A6F00F8BCEA /* ReviewPurchase.swift in Sources */,
+				EFCE6AEC20AF271900B8E682 /* Intro.swift in Sources */,
+				EFCE6B0620B0BBE600B8E682 /* SubTemplateVC.swift in Sources */,
+				EF3F02CB20B7B7810030604C /* Home3.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B5620AF263800550B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF872B5F20AF263800550B37 /* _CLaundry_V2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF872B6120AF263800550B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF872B6A20AF263800550B37 /* _CLaundry_V2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF872B5C20AF263800550B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF872B4520AF263800550B37 /* 5CLaundry_V2 */;
+			targetProxy = EF872B5B20AF263800550B37 /* PBXContainerItemProxy */;
+		};
+		EF872B6720AF263800550B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF872B4520AF263800550B37 /* 5CLaundry_V2 */;
+			targetProxy = EF872B6620AF263800550B37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF872B4D20AF263800550B37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF872B4E20AF263800550B37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF872B5220AF263800550B37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF872B5320AF263800550B37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF872B6C20AF263800550B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF872B6D20AF263800550B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF872B6F20AF263800550B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FF1FDCA3000F243B9C6C40 /* Pods-5CLaundry_V2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 5CLaundry_V2/5CLaundry_V2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JY9634L74;
+				INFOPLIST_FILE = 5CLaundry_V2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5CLaundry.5CLaundry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF872B7020AF263800550B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA075418BEF7096EA4C9F766 /* Pods-5CLaundry_V2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 5CLaundry_V2/5CLaundry_V2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JY9634L74;
+				INFOPLIST_FILE = 5CLaundry_V2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5CLaundry.5CLaundry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF872B7220AF263800550B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA25E5C506C3355CF93A7A4 /* Pods-5CLaundry_V2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A73ZK7Y54;
+				INFOPLIST_FILE = 5CLaundry_V2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardacre.-CLaundry-V2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5CLaundry_V2.app/5CLaundry_V2";
+			};
+			name = Debug;
+		};
+		EF872B7320AF263800550B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B230AD754F5D49317374D3E /* Pods-5CLaundry_V2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A73ZK7Y54;
+				INFOPLIST_FILE = 5CLaundry_V2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardacre.-CLaundry-V2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5CLaundry_V2.app/5CLaundry_V2";
+			};
+			name = Release;
+		};
+		EF872B7520AF263800550B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6440918B04D9500206264136 /* Pods-5CLaundry_V2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A73ZK7Y54;
+				INFOPLIST_FILE = 5CLaundry_V2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardacre.-CLaundry-V2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 5CLaundry_V2;
+			};
+			name = Debug;
+		};
+		EF872B7620AF263800550B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2529ECB544C70BBF7671252 /* Pods-5CLaundry_V2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A73ZK7Y54;
+				INFOPLIST_FILE = 5CLaundry_V2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardacre.-CLaundry-V2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 5CLaundry_V2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF872B4120AF263800550B37 /* Build configuration list for PBXProject "5CLaundry_V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF872B6C20AF263800550B37 /* Debug */,
+				EF872B6D20AF263800550B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF872B6E20AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF872B6F20AF263800550B37 /* Debug */,
+				EF872B7020AF263800550B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF872B7120AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF872B7220AF263800550B37 /* Debug */,
+				EF872B7320AF263800550B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF872B7420AF263800550B37 /* Build configuration list for PBXNativeTarget "5CLaundry_V2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF872B7520AF263800550B37 /* Debug */,
+				EF872B7620AF263800550B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF3F02BC20B4A20E0030604C /* Preferences.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF3F02BD20B4A20E0030604C /* Preferences.xcdatamodel */,
+			);
+			currentVersion = EF3F02BD20B4A20E0030604C /* Preferences.xcdatamodel */;
+			path = Preferences.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF872B3E20AF263800550B37 /* Project object */;
+}

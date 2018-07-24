@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '5CLaundry_V2' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for 5CLaundry_V2
+    pod 'NVActivityIndicatorView'
+    pod 'Stripe'
+    pod 'Alamofire'
+    pod 'CreditCardForm'
+    pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
+    pod 'Firebase/Database'
+
+  target '5CLaundry_V2Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target '5CLaundry_V2UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_5CLaundry_V2 {
+  umbrella header "Pods-5CLaundry_V2-umbrella.h"
+
+  export *
+  module * { export * }
+}
