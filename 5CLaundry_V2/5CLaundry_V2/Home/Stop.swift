@@ -15,8 +15,9 @@ class Stop: NSObject {
     var start_min = 0
     var end_hour = 0
     var end_min = 0
+    var half = 0
 
-    init(place: String, start: String, end: String) {
+    init(place: String, start: String, end: String, half: Int) {
         self.place = place
         var start_split = start.split(separator: ".")
         var end_split = end.split(separator: ".")
@@ -42,8 +43,8 @@ class Stop: NSObject {
         return end_min
     }
     
-    func compare(hour: Int, min: Int) -> Int{
-        if hour == start_hour && hour == end_hour{
+    func compare(hour: Int, min: Int, half: Int) -> Int{
+        if hour == start_hour && hour == end_hour && half == self.half{
             if min < start_min {
                 return -1
             }else if min > end_min{
@@ -51,19 +52,21 @@ class Stop: NSObject {
             }else{
                 return 0
             }
-        }else if hour == start_hour && hour != end_hour{
+        }else if hour == start_hour && hour != end_hour && half == self.half{
             if min > start_min {
                 return 0
             }else{
                 return -1
             }
-        }else if hour == end_hour && hour != start_hour{
+        }else if hour == end_hour && hour != start_hour && half == self.half{
             if min < end_min {
                 return 0
             }else{
                 return 1
             }
-        }else if hour > end_hour {
+        }else if hour > end_hour && half == self.half{
+            return 1
+        }else if half > self.half{
             return 1
         }
         return -1

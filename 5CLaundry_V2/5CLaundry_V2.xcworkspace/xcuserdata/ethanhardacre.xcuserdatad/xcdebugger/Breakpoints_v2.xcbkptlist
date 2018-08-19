@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "5CLaundry_V2/FAQ.swift"
-            timestampString = "549083755.5902849"
+            timestampString = "556213761.870438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "answers"
             landmarkType = "24">
          </BreakpointContent>

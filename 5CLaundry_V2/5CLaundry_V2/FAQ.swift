@@ -63,10 +63,9 @@ class Information: SubTemplateVC , UIScrollViewDelegate, MKMapViewDelegate{
 
     var scrollView = UIScrollView()
     var questions = [ "Where can I find the 5CLaundry van?", "What is 5C Laundry?",
-    "Who does the actual laundry and dry cleaning?",
     "How soon will my laundry and dry cleaning be ready for pick-up?",
-    " I want to use your dry-cleaning service, but I didn’t sign up for a semester-long plan. Can I still do so?",
-    " I purchased too much dry cleaning credit, will my credits roll over to next semester?",
+    "I want to use your dry-cleaning service, but I didn’t sign up for a semester-long plan. Can I still do so?",
+    "I purchased too much dry cleaning credit, will my credits roll over to next semester?",
     "After the laundry is folded, how do you keep it from wrinkling? ",
     "My clothing requires special care. Will you ensure it is not damaged? ",
     "I would like service, but cannot make it to the truck location at the regular time. Can I still get service? ",
@@ -74,16 +73,15 @@ class Information: SubTemplateVC , UIScrollViewDelegate, MKMapViewDelegate{
     "What happens if my clothing is damaged? "
     ]
     
-    var answers = ["", "5C Laundry picks up dirty laundry and dry cleaning from various locations across the Claremont Colleges campus, brings it for professional cleaning at Rockys, then delivers the clean laundry to campus.",
-                   "Rocky’s, located in the Claremont Village, provides all laundry and dry cleaning services. They have been providing quality service to the area for more than 50 years.",
+    var answers = ["", "5C Laundry picks up dirty laundry and dry cleaning from various locations across the Claremont Colleges campus, brings it for professional cleaning, then delivers the clean laundry to campus.",
                    "Your laundry/dry cleaning will be done within 48 hours. This semester students can pickup/drop off MWF, but Friday dry cleaning drops will not be ready until Wednesday (laundry will be ready Monday). You can pick your laundry up at any truck location on campus.",
                    "Yes, dry cleaning service is available to everyone on campus. We encourage you purchase dry cleaning credits before the semester so you have a registered laundry bag.",
                    "Yes, dry cleaning credit will roll over from semester-to-semester and year-to-year. Credits cannot be redeemed for cash or be given to other students… so make sure you use them by graduation. If you run out of dry-cleaning credit and do not need to purchase $50+ more then we can charge you per-item on a weekly basis.",
-                   "Laundry is folded promptly after drying then is wrapped in brown paper to keep clothing wrinkle free and protected.",
-                   "Yes, our partner laundry facility, Rocky’s, has years of experience dealing with a variety of materials. If you have any delicates, they should be placed in your dry cleaning bag for special care.",
+                   "Laundry is folded after drying then wrapped to keep clothing wrinkle free and protected.",
+                   "Yes, our cleaning partners have years of experience dealing with a variety of materials. If you have any delicates, they should be placed in your dry cleaning bag for special care.",
                    "Yes, please send an email to 5C Laundry to make arrangements for an alternative delivery times. If several students have request similar times then a new pickup/drop off can be added to the delivery schedule.",
                    "College is busy and we understand that you may be late/early for pickup. If you have missed us, take a look at the schedule to see where are on campus. We will try to arrive at each location a minute or two early and leave a minute or two late.",
-                   "We have not had any issues with damage or lost items, but we are prepared to help. If you happen to put an delicate shirt in your laundry bag (instead of your dry cleaning bag) Rocky’s will have that item dry cleaned (not laundered) and 5C Laundry will charge the student per item. In the event that an item is damaged/lost, we reimburse the student with the book value of that item (provided by Rocky’s for an identical item in used condition). If this becomes an repeated issue, 5C Laundry reserves the right to terminate service and provide a prorated refund for unused service."
+                   "We have not had any issues with damage or lost items, but we are prepared to help. If you happen to put an delicate shirt in a laundry bag (instead of your dry cleaning bag) we will have that item dry cleaned (not laundered) and 5C Laundry will charge the student per item. In the event that an item is damaged/lost, we reimburse the student with the book value of that item. If this becomes an repeated issue, 5C Laundry reserves the right to terminate service and provide a prorated refund for unused service."
     ]
     
     override func viewDidLoad() {

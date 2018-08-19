@@ -19,12 +19,12 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
     
     //initialize the plans, prices and other info
     var plans = ["STAY CLEAN","LOOK SHARP","DELUXE","PAY AS YOU GO","DRY CLEAN"]
-    var prices = ["$229","$399","$549","$2"]
+    var prices = ["$229","$399","$549","$2.25"]
     var per = ["per semester","per semester","per semester","per pound"]
     var purchase = ["SIGN UP!","SIGN UP!","SIGN UP!","REGISTER!","BUY CREDIT!"]
-    var pounds = [10,5,20]
-    var turnaround = [48,48,48]
-    var additional = [1.75,1.75,1.50]
+    var pounds = [5,10,20]
+    var cleaningCred = [30,50,70]
+    var additional = ["1.75","1.75","1.50"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,7 +107,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
                 infobit.text = """
                      ● \(pounds[index]) pounds per week
                     
-                     ● \(turnaround[index]) hour turnaround
+                     ● $\(cleaningCred[index]) cleaning credit included
                     
                      ● $\(additional[index]) per additional pound
                     """
@@ -161,7 +161,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
                 
                 let infobitThree = UILabel(frame: CGRect(x: 0, y: info.frame.height/2, width: info.frame.width, height: info.frame.height/8))
                 infobitThree.text = """
-                $2/pound
+                $2.25/pound
                 """
                 infobitThree.textAlignment = .center
                 infobitThree.numberOfLines = 1
@@ -184,7 +184,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
                                "Uniform" ,"Lined/Silk Blouse" , "Dress", "Suit and Skirt","Skirt"]
                 // 0 = both, 1 = men, 2 = women
                 var sex = [0,0,1,1,1,1,2,2,2,2]
-                var prices = ["$4","$4","$6","$5+","$10","$5","$5","$8+","$10","$6"]
+                var prices = ["$5","$5","$6","$5+","$10","$5","$6","$8+","$10","$6"]
                 
                 //apply for each item of clothing
                 for cloth in 0..<clothes.count{
@@ -257,7 +257,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
      */
     @objc func reviewLookSharp(){
         let popUPVC = ReviewPurchase()
-        popUPVC.initValues(price: 349, plan: "Look Sharp", credits: 0)
+        popUPVC.initValues(price: 399, plan: "Look Sharp", credits: 0)
         self.addChildViewController(popUPVC)
         popUPVC.view.frame = self.view.frame
         self.view.addSubview(popUPVC.view)
@@ -269,7 +269,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
      */
     @objc func reviewStayClean(){
         let popUPVC = ReviewPurchase()
-        popUPVC.initValues(price: 199, plan: "Stay Clean", credits: 0)
+        popUPVC.initValues(price: 229, plan: "Stay Clean", credits: 0)
         self.addChildViewController(popUPVC)
         popUPVC.view.frame = self.view.frame
         self.view.addSubview(popUPVC.view)
@@ -281,7 +281,7 @@ class LaundryPlans: SubTemplateVC, UIScrollViewDelegate{
      */
     @objc func reviewDeluxe(){
         let popUPVC = ReviewPurchase()
-        popUPVC.initValues(price: 499, plan: "Deluxe", credits: 0)
+        popUPVC.initValues(price: 549, plan: "Deluxe", credits: 0)
         self.addChildViewController(popUPVC)
         popUPVC.view.frame = self.view.frame
         self.view.addSubview(popUPVC.view)

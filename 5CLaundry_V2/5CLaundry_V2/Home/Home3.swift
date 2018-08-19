@@ -119,22 +119,22 @@ class Home3: TemplateVC, UIScrollViewDelegate {
         
         if stop != ""{
             
-            var stops = [Stop(place:"PITZER", start: "2.00", end: "2.10"),
-                     Stop(place:"SCRIPPS", start: "2.15", end: "2.25"),
-                     Stop(place:"HMC/SCRIPPS", start: "2.30", end: "2.40"),
-                     Stop(place:"POMONA", start: "2.45", end: "3.00"),
-                     Stop(place:"CMC/POMONA", start: "3.05", end: "3.20"),
-                     Stop(place:"TOWERS", start: "3.25", end: "3.30"),
-                     Stop(place:"PITZER", start: "3.35", end: "3.45"),
-                     Stop(place:"SCRIPPS", start: "3.50", end: "4.00"),
-                     Stop(place:"HMC/SCRIPPS", start: "4.05", end: "4.15"),
-                     Stop(place:"POMONA", start: "4.20", end: "4.35"),
-                     Stop(place:"CMC/POMONA", start: "4.40", end: "4.55"),
-                     Stop(place:"TOWERS", start: "5.00", end: "5.05")
+            var stops = [Stop(place:"PITZER", start: "11.00", end: "11.10",half:0),
+                     Stop(place:"SCRIPPS", start: "11.15", end: "11.25",half:0),
+                     Stop(place:"HMC/SCRIPPS", start: "11.30", end: "11.35",half:0),
+                     Stop(place:"POMONA", start: "11.40", end: "11.55",half:0),
+                     Stop(place:"CMC/POMONA", start: "12.00", end: "12.15",half:1),
+                     Stop(place:"TOWERS", start: "12.20", end: "12.25",half:1),
+                     Stop(place:"PITZER", start: "12.30", end: "12.40",half:1),
+                     Stop(place:"SCRIPPS", start: "12.45", end: "12.55",half:1),
+                     Stop(place:"HMC/SCRIPPS", start: "1.00", end: "1.05",half:1),
+                     Stop(place:"POMONA", start: "1.10", end: "1.25",half:1),
+                     Stop(place:"CMC/POMONA", start: "1.30", end: "1.45",half:1),
+                     Stop(place:"TOWERS", start: "1.50", end: "1.55",half:1)
                      ]
             
             var places = ["PITZER","SCRIPPS","HMC/SCRIPPS","POMONA","CMC/POMONA","TOWERS","PITZER","SCRIPPS","HMC/SCRIPPS","POMONA","CMC/POMONA","TOWERS"]
-            var times = ["2:00 - 2:10 pm","2:15 - 2:25 pm","2:30 - 2:40 pm","2:45 - 3:00 pm","3:05 - 3:20 pm","3:25 - 3:30 pm","3:35 - 3:45 pm","3:50 - 4:00 pm","4:05 - 4:15 pm","4:20 - 4:35 pm","4:40 - 4:55 pm","5:00 - 5:05 pm"]
+            var times = ["11:00 - 11:10 am","11:15 - 11:25 am","11:30 - 11:35 am","11:40 - 11:55 am","12:00 - 12:15 pm","12:20 - 12:25 pm","12:30 - 12:40 pm","12:45 - 12:55 pm","1:00 - 1:05 pm","1:10 - 1:25 pm","1:30 - 1:45 pm","1:50 - 1:55 pm"]
             var images = [#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (3)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (4)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (5)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (1)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (2)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (3)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (4)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (5)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (1)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (2)")]
             
             var stops_at_loc : [Stop] = []
@@ -173,6 +173,15 @@ class Home3: TemplateVC, UIScrollViewDelegate {
             let minutes = calendar.component(.minute, from: date)
             var prev = 0
             
+            var formatter = DateFormatter()
+            formatter.dateFormat = "a"
+            let timeOfDay = formatter.string(from: date)
+            print(timeOfDay)
+            var half = 0
+            if timeOfDay == "PM"{
+                half = 1
+            }
+            
         
             var today_int = Calendar.current.dateComponents([.weekday], from: Date()).weekday! - 1
             for i in 0...6{
@@ -200,8 +209,8 @@ class Home3: TemplateVC, UIScrollViewDelegate {
             var time_two = stops_at_loc[1]
             var nextStop = time_one
             var nextStop_day = days_in_order[0]
-            var comparison_one = time_one.compare(hour: hour, min: minutes)
-            var comparison_two = time_two.compare(hour: hour, min: minutes)
+            var comparison_one = time_one.compare(hour: hour, min: minutes, half: half)
+            var comparison_two = time_two.compare(hour: hour, min: minutes, half: half)
             print("comparison 1: " + String(comparison_one))
             print("comparison 2: " + String(comparison_two))
             if dates.contains(days_in_order[0]){
@@ -616,7 +625,7 @@ class Menu1 : UIView {
 class timeView : UIView {
     
     var places = ["PITZER","SCRIPPS","HMC/SCRIPPS","POMONA","CMC/POMONA","TOWERS","PITZER","SCRIPPS","HMC/SCRIPPS","POMONA","CMC/POMONA","TOWERS"]
-    var times = ["2:00 - 2:10 pm","2:15 - 2:25 pm","2:30 - 2:40 pm","2:45 - 3:00 pm","3:05 - 3:20 pm","3:25 - 3:30 pm","3:35 - 3:45 pm","3:50 - 4:00 pm","4:05 - 4:15 pm","4:20 - 4:35 pm","4:40 - 4:55 pm","5:00 - 5:05 pm"]
+    var times = ["11:00 - 11:10 am","11:15 - 11:25 am","11:30 - 11:35 am","11:40 - 11:55 am","12:00 - 12:15 pm","12:20 - 12:25 pm","12:30 - 12:40 pm","12:45 - 12:55 pm","1:00 - 1:05 pm","1:10 - 1:25 pm","1:30 - 1:45 pm","1:50 - 1:55 pm"]
     var images = [#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (3)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (4)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (5)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (1)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (2)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (3)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (4)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (5)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (1)"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50"),#imageLiteral(resourceName: "icons8-t-shirt-filled-50 (2)")]
     
     override init(frame: CGRect) {

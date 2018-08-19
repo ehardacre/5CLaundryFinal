@@ -41,8 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         UITabBar.appearance().tintColor = UIColor(red: 252/255.0, green: 9/255.0, blue: 9/255.0, alpha: 1.0)
         
-        //Set Stripe Publishable Key
-        Stripe.setDefaultPublishableKey("pk_test_rLt6nHx2dgbewvBUXWAWrQxF")
+        //Set Stripe Publishable Key //LIVE
+        Stripe.setDefaultPublishableKey("pk_live_uTVhRNzvfOEF1HKpoOL2VVYf")
         
         //Configure Firebase Notifications
         FirebaseApp.configure()
